@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:200,300,400,500,60,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f369e;
+}
+.container
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.clock
+{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: #2f368e;
+    border-radius: 50%;
+    box-shadow: 10px 50px 60px rgb(0,0,0,0.2),
+    inset 5px 5px 5px rgb(94, 80, 226),
+    inset 5px 5px 20px rgba(94, 80, 226),
+    inset -5px -5px 20px rgba(94, 80, 226) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock::before
+{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #2f369e;
+    border: 3px solid yellow;
+    border-radius: 50%;
+    z-index: 10000;
+}
+.clock span
+{
+    position: absolute;
+    inset: 20px;
+    color: #fff;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+}
+.clock span b
+{
+font-size: 1.5em;
+opacity: 0.3;
+font-weight: 600;
+display: inline-block;
+transform: rotate(calc(-30deg * var(--i)));
+}
+.c
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(3, 18, 66, 0.705);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+}
+.clock b{
+ font-size: 11px;
+ margin-bottom: 15%;
+ color: var(--clr);
+ box-shadow: 0 1px 1px var(--clr)
+}
+
+.c i
+{
+position: absolute;
+width: 6px;
+height: 50%;
+background: var(--clr);
+opacity: 100%;
+transform-origin: bottom;
+transform: scaleY(0.5);
+border-radius: 50%;
+}
+.c:nth-child(1) i
+{
+width: 2px;
+}
+.c:nth-child(2) i
+{
+width: 6px;
+}
+.c2
+{
+    width: 240px;
+    height: 240px;
+    z-index: 9;
+}
+.c3
+{
+    width: 180px;
+    height: 180px;
+    z-index: 8;
+}
+.c::before
+{
+    content: '';
+    position: absolute;
+    top: -8.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 15px var(--clr),
+    0 0 40px var(--clr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
